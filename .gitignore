@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+cache/
+captures/
+frames/
+models/
+works/
+legacy/
+*.log
+docs/subtitle-page.png
+integrations/qq_readonly/settings.json

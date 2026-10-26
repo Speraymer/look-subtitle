@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Look 字幕",
+  "version": "0.4.2",
+  "description": "给 look.tongji.edu.cn 的课程回放叠上本机转好的字幕：可拖动、可调字号，配套字幕全文页。",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>", "http://127.0.0.1:8765/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://look.tongji.edu.cn/*"],
+      "js": ["content.js", "overlay.js", "ppt.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": ["http://127.0.0.1:8765/*"],
+      "js": ["viewer.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

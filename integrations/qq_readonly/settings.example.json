@@ -1,0 +1,5 @@
+{
+  "api_url": "http://127.0.0.1:3033",
+  "api_token": "replace-with-a-random-token",
+  "allowed_chats": []
+}
