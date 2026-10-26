@@ -16,7 +16,7 @@
 需要 Windows、Python 3.11+；处理 PPT/PPTX 时需要本机 PowerPoint，PDF 不需要 Office。
 
 ```powershell
-git clone <仓库地址>
+git clone https://github.com/Speraymer/look-subtitle.git
 cd look-subtitle
 python -m pip install -r requirements.txt
 python look.py model
