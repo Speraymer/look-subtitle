@@ -53,7 +53,7 @@ python look.py doc
 
 公开版附带一个权限收紧的只读 QQ MCP。安装与 NapCat/OneBot 配置见 [integrations/qq_readonly/README.md](integrations/qq_readonly/README.md)。它默认不能读任何聊天，只有用户明确允许并写入 `allowed_chats` 的群才能读取历史；历史可能不完整。
 
-让另一个代理完整处理回放时，直接把 [AGENT_PROMPT.md](AGENT_PROMPT.md) 作为任务提示词。提示词已要求：QQ 不通就停下询问、对照两个课程群确认课件版本、结合 PPT 和上下文修正磕巴，但不擅自改写课程特有的 Unix V6++ 内容。
+让另一个代理完整处理回放时，直接把 [AGENT_PROMPT.md](AGENT_PROMPT.md) 作为任务提示词。代理需先确认本节主题和课件术语，逐段对照课件与音频清理口癖、修正识别错误，再重建字幕和讲义；QQ 课件版本核实与课程特有表述的限制也在提示词中。
 
 ## 常用命令
 
